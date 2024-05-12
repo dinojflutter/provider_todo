@@ -67,4 +67,9 @@ class TaskViewModel extends ChangeNotifier {
     log(tasks.length.toString());
     notifyListeners();
   }
+
+  clearTask() {
+    tasks.clear();
+    notifyListeners();
+  }
 }
